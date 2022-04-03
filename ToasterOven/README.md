@@ -1,10 +1,13 @@
-Tanvir Kaur Sandhu (taksandh@ucsc.edu)
+In this program, the user can use the controller kit as a toaster oven using an implementation of Finite State Machines.
 
-In this lab, we learned how to create a toaster oven with different modes on out microcontrollers that could be changed with the press, or LONG_PRESS, of a button. The most important aspects of this lab were learning how to check the duration of how long a button was pressed, making the LEDS countdown along with the timer, and having the potentiometer decide what the time and/or temp was. These are highlighted in the lab manual as well, so I believe we agree. Another aspect that was really important to learn for this lab was print formatting. Although we have done this in other labs, the amount of variables and symbols we needed to print was a lot more this time around, so formatting was very important.
+On startup, the user picks between three modes:
 
-I knew this lab was going to be more difficult than the past ones after reading the warning on top of the lab manual, so I tried my best to start it earlier. I think I started this lab in a timely manner and spent a lot of time on it every day to understand and tackle the lab. I read the manual first multiple times to understand the larger part of this program and what I was supposed to code. That really helped! In the middle of doing this lab, I began getting a jal startup error and that took me at least 6 hours to debug, which is kind of sad, I know. After that, though, it was pretty smooth sailing, except for the timer going super fast (because I switched the freeRunTime and startTime in one of my statements) and the reset_pending case not working. If I were to do this lab again, I would be more thorough in my first code to avoid a small error that took me 6 hours of debugging. 
+  -Bake mode: Both temperature and time are configurable, with temperature  defaulting to 350 degrees F and time to 0:01. Switching between temp and 
+    time  can  be  done  by  holding  BTN3  for  >  1s  (defined  as  LONG_PRESS). Whichever  is  selected  has  an  indicator  beside  its  label  and         both  top  and  bottom heating elements are visibly on when cooking in bake mode.
+    
+  -Toast mode: Only the time can be configured in this mode, and the temperature  is  not  displayed.  There  is  no  selector  indicator  on  the display. 
+    Only the bottom heating elements come on in toast mode. 
+    
+  -Broil mode: The  temperature  is  fixed  at  500  degrees  F  and  only  time  is configurable in this mode. The temperature is displayed in broil mode.     Again, the input selector indicator is not displayed. Only the top heating elements come on in broil mode.  
 
-Of course, as always, the "finished product" is so exciting to see! An actual toaster oven that has heat either on the top or bottom depending on the mode is so cool to have coded, as well as the LEDs and Adc. This lab took me the longest simply because of all the debugging I had to do; it took about 4 full days I would say. The end result is rewarding, even though my RESET_PENDING does not work as of right now @ 10:07 pm Wednesday night. The hardest part of this lab was definitely the reset_pending since I cannot get my oven to reset!! It's honestly so aggravating when you're so close, yet so far. The point distribution seems fair and the diagram in the manual was SUPER helpful.
-
-UPDATE: I just got my reset_pending to work! I put oD.cookMode in a couple places where it should have been oD.state. Small mistake!
 
