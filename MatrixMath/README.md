@@ -1,8 +1,13 @@
-Tanvir Sandhu (taksandh@ucsc.edu)
-
-1. For this lab, we created all of the possible mathematic operations that could be performed on a 3x3 matrix in the form of functions in the MatrixMath.h file.After creating the function's actions in the MatrixMath.h file, we had to create tests to make sure the function worked properly by hardcoding the correct output and comparing it to the output of the function using one of the created functions MatrixEquals, which compared two 3x3 matrices to make sure they are equal. The important aspects of this lab, for me, were figuring out how to loop through each of the numbers in the matrix and perform an action on them. Loops were very important in this lab and learning how to use loops for basically every function.
-
-2. Understading what was asked of us through this lab was probably the most confusing part. I reread the Lab 3 instructions multiple times before I even knew where to begin. Small mistakes like missing a bracket or semicolon would not let the program run, so I spent a lot of time looking for tiny errors like that. Once I understood what to do, though, I flew through a couple of the functions; the harder ones took a lot more time, as you can probably tell from the commit time stamps. 
-
-3. I am so soooo thankful for the extension! Although I did start reading the lab document quite early, I had no idea how to actually code it for at least a day. It took me a full 4 days to do this lab. I would stay up until about 4 AM doing the lab, which is normal for me, so don't feel too bad, but it was more fun when I knew how to do it. The hardest part was probably just the inverse because it was a culmination of all the previous functions and had the most steps. I liked this lab, though; it really helped me understand loops and matrices/arrays. The lab manual covered everything I needed to start off this lab. Leaving the output design up to us is difficult, though, because although we are given freedom in that aspect, it makes it hard for me to decide whether something is clean or good enough for the grader. The point distribution seems fair
-
+This program, given an NxM matrices, can perform any of the following operations:
+  - MatrixEquals() : checks if the matrices are equal
+  - MatrixAdd() : adds the matrices
+  - MatrixMultiply() : multiplies the matrices
+  - MatrixScalarAdd() : adds the val to all entries in the matrix
+  - MatrixScalarMultiply() : multiplies the val to all entries in the matrix
+  - MatrixTrace() : returns the sum of the diagonal members of the matrix (starting in the upper left corner)
+  - MatrixTranspose() : returns the transpose of the matrix (flipped over the same diagonal line)
+  – MatrixSubmatrix() : given two values, removes that row and column, returning a submatrix
+  - MatrixDeterminant() : returns the determinant of the matrix
+  – MatrixInverse() : returns the inverse of the matrix
+  
+The mml_test file is included to demonstrate the tests I created to ensure my program was working, and an executable file is also included.
