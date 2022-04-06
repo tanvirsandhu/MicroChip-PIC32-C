@@ -9,5 +9,7 @@ On startup, the user picks between three modes, and depending on the modes, cert
     Only the bottom heating elements come on in toast mode. 
     
   -Broil mode: The  temperature  is  fixed  at  500  degrees  F  and  only  time  is configurable in this mode. The temperature is displayed in broil mode.     Again, the input selector indicator is not displayed. Only the top heating elements come on in broil mode.  
+  
+  Once the mode has been selected and the user starts the oven, it will light up accordingly and "cook" for the time selected.
 
 
